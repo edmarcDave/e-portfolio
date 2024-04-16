@@ -221,29 +221,27 @@ html {
 
 .about{
     display: flex;
+    flex-wrap: wrap;
+    margin: 8% 10% 4%;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
 }
 
 .about .about-photo {
-    display: flex;
-    align-items: center;
-    flex: 25%;
+    flex: 0 0 371px;
     background: #9980da;
-    margin: 8% 0 4% 10% ;
-    box-shadow: 0 0 15px rgba(0,0,0,0.5);
-}
+    margin: 0 auto;
+    height: 657px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-.about .about-content img {
-    width: 100%;
-    height: auto;
-}
 
 .about .about-content {
-    flex: 75%;
+    flex: 1;
     background: hsl(257, 39%, 62%);
     color: #E6E6FA;
     padding: 0 20px;
-    margin: 8% 10% 4% .4px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.5);
 }
 
 .about .about-content h1 {
@@ -260,6 +258,20 @@ html {
     text-align:justify;
     font-family: Century Gothic;
 }
+
+@media (min-width: 768px) {
+    .about {
+      flex-direction: row;
+    }
+  
+    .about .about-photo {
+      order: 1;
+    }
+  
+    .about .about-content {
+      order: 2;
+    }
+  }
 
 /*Resume*/
 
