@@ -230,6 +230,7 @@ html {
     flex: 0 0 371px;
     background: #9980da;
     margin: 0 auto;
+    width: 371px;
     height: 657px;
     display: flex;
     justify-content: center;
@@ -242,6 +243,19 @@ html {
     background: hsl(257, 39%, 62%);
     color: #E6E6FA;
     padding: 0 20px;
+}
+
+@media (max-width: 767px) {
+    .about {
+        margin-top: 70px;
+    }
+    .about .about-photo {
+        order: 2;
+    }
+  
+    .about .about-content {
+        order: 1;
+    }
 }
 
 .about .about-content h1 {
@@ -258,20 +272,6 @@ html {
     text-align:justify;
     font-family: Century Gothic;
 }
-
-@media (min-width: 768px) {
-    .about {
-      flex-direction: row;
-    }
-  
-    .about .about-photo {
-      order: 1;
-    }
-  
-    .about .about-content {
-      order: 2;
-    }
-  }
 
 /*Resume*/
 
