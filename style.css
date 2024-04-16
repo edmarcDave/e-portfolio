@@ -251,7 +251,6 @@ html {
     }
     .about .about-photo {
         order: 2;
-        background: hsl(257, 39%, 62%);
     }
   
     .about .about-content {
@@ -567,7 +566,7 @@ html {
 
 @media (max-width: 767px) {
     .works h1 {
-        margin-top: 70px; /* Adjusted top margin for smaller screens */
+        margin-top: 60px; /* Adjusted top margin for smaller screens */
     }
   
     .works .work-content {
