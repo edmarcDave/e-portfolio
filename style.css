@@ -37,6 +37,7 @@ html {
     color: #39276e;
     text-decoration: none;
     font-weight: 600;
+    white-space: nowrap;
 }
 
 .header nav{
@@ -332,6 +333,10 @@ html {
     display: grid;
     grid-template-columns: 25% 75%;
     margin-top: 1.4em; 
+}
+
+.resume-content .education .break-word {
+    overflow-wrap:break-word;
 }
 
 .resume-content h4 {
