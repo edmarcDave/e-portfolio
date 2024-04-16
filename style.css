@@ -251,7 +251,7 @@ html {
     }
     .about .about-photo {
         order: 2;
-        background: transparent;
+        background: hsl(257, 39%, 62%);
     }
   
     .about .about-content {
