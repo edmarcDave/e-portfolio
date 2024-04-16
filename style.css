@@ -41,6 +41,7 @@ html {
 
 .header nav{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .header .navbar a{
@@ -263,6 +264,7 @@ html {
 .resume {
     background: #8f7ac4;
     display: flex ;
+    flex-wrap: wrap;
     margin: 8% 10% 4%;
     box-shadow: 0 0 15px rgba(0,0,0,0.5);
     font-family: Century Gothic;
@@ -358,6 +360,7 @@ html {
 .works h1{
     font-size: 55px;
     display: flex ;
+    flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 30px;
 }
