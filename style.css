@@ -368,12 +368,106 @@ html {
     color: #E6E6FA;
 }
 
+/*Resume*/
+
+.resume {
+    background: #8f7ac4;
+    display: flex ;
+    flex-wrap: wrap;
+    margin: 8% 10% 4%;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    font-family: Century Gothic;
+}
+
+.resume .side-panel {
+    flex: 30%;
+    padding: 15px ;  
+    color: #39276e;
+}
+
+.resume .side-panel .myphoto img{
+    width: 2in;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.resume .side-panel .contact-information li {
+    list-style: none;
+    margin: 1.5em 0 ;
+}
+
+.resume .side-panel ul li {
+    margin: 1.5em 3em 0 ;
+    color: #E6E6FA;
+}
+
+.resume .resume-content {
+    flex: 70%;
+    padding: 15px;
+    color: #E6E6FA;
+}
+
+.resume-content h1 {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #39276e;
+}
+.resume-content h3 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #4a3a7c;
+}
+.resume-content p {
+    font-size: 17px;
+    margin-bottom: 1.05em;
+}
+
+.resume-content hr,
+.side-panel hr { 
+    border: none;
+    border-top: 2px solid #4a3a7c; 
+}
+
+.resume-content h2,
+.side-panel h2{
+    padding-top: 20px;
+    font-weight: 400;
+    color: #39276e;
+}
+
+.resume-content .education{
+    display: grid;
+    grid-template-columns: 25% 75%;
+    margin-top: 1.4em; 
+}
+
+.resume-content .education .break-word {
+    overflow-wrap:break-word;
+}
+
+.resume-content h4 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #39276e;
+}
+
+.resume-content h5 {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 1.5em;
+}
+.resume-content ul li {
+    margin: 1.5em 3em 0; 
+    color: #E6E6FA;
+}
+
 /*Sample Works*/
 
 .works{
-    display:
     width: 100%;
-    padding: 8% 1%;
+    padding: 8% 1% 8% 1%;
 }
 
 .works h1{
@@ -432,7 +526,7 @@ html {
 }
 
 .works .work-content .work-card .work-infos h2{
-    width: 50%;
+    width: 70%;
     text-align: center;
     margin: 10px auto 10px auto;
     font-size: 25px;
@@ -463,4 +557,29 @@ html {
     letter-spacing: 1px;
     overflow: hidden;
     transition: 0.5s;
+}
+
+.works .work-content .work-card .work-infos .work_btn:hover {
+    background: #39276e;
+    color:#9980da;
+}
+
+@media (max-width: 767px) {
+    .works h1 {
+        margin-top: 60px; /* Adjusted top margin for smaller screens */
+    }
+  
+    .works .work-content {
+        display: flex;
+        flex-wrap: wrap; /* Change to wrap on smaller screens */
+        justify-content: center; /* Center the items on smaller screens */
+    }
+  
+    .works .work-content .work-card {
+        width: 90%; /* Adjust the width of the work cards for better responsiveness */
+        margin-bottom: 20px; /* Add margin between the work cards */
+    }
+    .works .work-content .work-card .work-photo {
+        width: 100%;
+    }
 }
